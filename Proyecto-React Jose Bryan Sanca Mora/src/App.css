@@ -1,0 +1,515 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+
+main {
+  flex: 1;
+  margin-top: 400px; /* Ajusta este valor según la altura de tu barra de navegación */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 60px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.registros-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.table-container {
+  margin-top: 10px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-scroll {
+  max-height: 300px; /* Establece una altura máxima para el scroll vertical */
+  overflow-y: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Registros.css */
+
+.form-container {
+  max-width: 600px;
+  border: #2c3e50 5px solid;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  width: 100%; /* El ancho de los inputs y selects será el 100% del contenedor */
+  padding: 8px;
+  font-size: 16px;
+}
+
+.form-group button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 20px); /* Ajustar el ancho restando el padding */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 5px; /* Espacio adicional entre elementos */
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 60px;
+  background-color: #282c34;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Espacio entre el formulario y el botón */
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.table-scroll {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table-container tr:hover {
+  background-color: #f9f9f9;
+}
+
+.table-container td:last-child {
+  white-space: nowrap;
+}
+
+.table-container button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-container button:hover {
+  background-color: #c82333;
+}
+
+
+.footer {
+  background-color: #282c34;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav li {
+  margin: 5px 0;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ddd;
+}
+
+@media (min-width: 600px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-nav li {
+    margin: 0 10px;
+  }
+}
+
+nav {
+  border:  #2c3e50  5px solid;
+  background-color:  #7b241c ; /* Color de fondo slate-900 */
+  padding: 15px;
+  border-radius: 20px;
+  position: fixed; /* Fijo en la parte superior */
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ajusta el z-index según sea necesario */
+  margin-bottom: 20px; /* Agrega espacio abajo del nav */
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-weight: bold;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fbbf24; /* Color de texto hover amarillo-300 */
+}
+
+
+
+/*inicio*/
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.info-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: #2c3e50 5px solid;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.info-container h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .info-container {
+    padding: 15px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+}
+
+
+/*contacto*/
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ubicacion-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+
+
+.ubicacion-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ubicacion-info li {
+  margin-bottom: 10px;
+}
+
+
+
+.imagen-container {
+  flex: 1;
+  text-align: center;
+  
+
+}
+
+.imagen-container img {
+  max-width: 200%;
+  height: 900px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formulario-container {
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: #282c34 5px solid;
+}
+
+
+
+button {
+  background-color: #2c3e50;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tabla-contactos {
+  margin-top: 60px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .ubicacion-container {
+    flex-direction: column;
+  }
+}
+
+
+/*productos*/
+.productos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.titulo-productos {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cuadros-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  
+}
+
+.cuadro-producto {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border: #2c3e50 5px solid;
+  border-radius: 30px;
+}
+
+.cuadro-producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.info-producto {
+  padding: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-ordenar {
+  background-color: #282c34;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.btn-ordenar:hover {
+  background-color: #0056b3;
+}
